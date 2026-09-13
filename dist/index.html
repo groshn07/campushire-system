@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CampusHire placement management platform" />
+    <meta name="theme-color" content="#14172B" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>CampusHire</title>
+    <script type="module" crossorigin src="/assets/index-D6jZqukr.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.warn('SW registration failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

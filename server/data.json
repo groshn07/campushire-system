@@ -1,0 +1,545 @@
+{
+  "users": [
+    {
+      "id": "u_admin1",
+      "name": "Meera Krishnan",
+      "email": "admin@demo.com",
+      "password": "$2a$10$0mlz8cX0YjlNc9MbUKrzG..s5dfyUMjBfHjYJJ3G4g7auXDZERj5O",
+      "role": "admin"
+    },
+    {
+      "id": "u_rec1",
+      "name": "Arjun Rao",
+      "email": "recruiter@demo.com",
+      "password": "$2a$10$lagSOo7Fns6.TzeUagKZMuyXnco60.eYrhzkpSfQrQg5HYmhLqmzm",
+      "role": "recruiter",
+      "companyId": "c_stratos",
+      "designation": "Talent Acquisition Lead"
+    },
+    {
+      "id": "u_rec2",
+      "name": "Divya Menon",
+      "email": "divya@finwise.com",
+      "password": "$2a$10$jUtnWQVMMxUM.VD4DrrZo./YRUMohE2IWKzCzRea17aqlclui2n8m",
+      "role": "recruiter",
+      "companyId": "c_finwise",
+      "designation": "HR Manager"
+    },
+    {
+      "id": "u_stu1",
+      "name": "Rahul Nair",
+      "email": "student@demo.com",
+      "password": "$2a$10$a5KzcdATKo2rNnSsv.e41.dlnrLLPxNfCd1IH5siS29c5zityb1s6",
+      "role": "student"
+    },
+    {
+      "id": "u_stu2",
+      "name": "Sneha Pillai",
+      "email": "sneha@demo.com",
+      "password": "$2a$10$y1mdUv6jPfNMQ152F09bqOlUWRh5u6gIwSOjDlj4M8cSkvETsgmfe",
+      "role": "student"
+    },
+    {
+      "id": "u_stu3",
+      "name": "Kabir Singh",
+      "email": "kabir@demo.com",
+      "password": "$2a$10$JYhOX.4GxrN26NXtiRGiQOpNpusFfOAIcx4jPXKDLMu1gS69HBeuW",
+      "role": "student"
+    },
+    {
+      "id": "u_mty7cy1ysqs4ma",
+      "name": "ewfve",
+      "email": "aznrtx@gmail.com",
+      "password": "$2a$10$VA/kK4iTj1cfxS0ta4nvxupSANfBdll35IZ2I704sRlHSJH9FHY8C",
+      "role": "student",
+      "companyId": "c_stratos",
+      "designation": null
+    },
+    {
+      "id": "u_mtzes6pdmtfboa",
+      "name": "harish",
+      "email": "harish@gmial.com",
+      "password": "$2a$10$A/7BPXn2HWSsN1HiHZNMYeFuetcvHW/HYQmRz883EKSviiPq45taa",
+      "role": "student",
+      "companyId": "c_stratos",
+      "designation": null
+    },
+    {
+      "id": "u_mtzewmg1ji1xk3",
+      "name": "gal",
+      "email": "gal@gail.com",
+      "password": "$2a$10$rZrrDazyZktQ5CsqnA9EPe1CFpTQBBgRYQ8Vx8rE2bXeHB6HgjwkO",
+      "role": "student",
+      "companyId": "c_stratos",
+      "designation": null
+    }
+  ],
+  "students": [
+    {
+      "studentId": "u_stu1",
+      "rollNo": "21CS041",
+      "branch": "Computer Science",
+      "batch": "2026",
+      "cgpa": 8.6,
+      "backlogs": 0,
+      "phone": "9876500001",
+      "skills": [
+        "React",
+        "Node.js",
+        "Python",
+        "SQL"
+      ],
+      "education": "B.Tech Computer Science, GCE College (2022–2026)",
+      "experience": "Summer intern at a startup building internal tooling in React & Node.",
+      "resumeSummary": "Full-stack leaning developer who enjoys building clean, usable products end to end."
+    },
+    {
+      "studentId": "u_stu2",
+      "rollNo": "21IT018",
+      "branch": "Information Technology",
+      "batch": "2026",
+      "cgpa": 7.2,
+      "backlogs": 1,
+      "phone": "9876500002",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "MySQL"
+      ],
+      "education": "B.Tech Information Technology, GCE College (2022–2026)",
+      "experience": "Built a hostel management system as a college project.",
+      "resumeSummary": "Backend-focused engineer comfortable with Java and relational databases."
+    },
+    {
+      "studentId": "u_stu3",
+      "rollNo": "21EC029",
+      "branch": "Electronics & Comm.",
+      "batch": "2026",
+      "cgpa": 9.1,
+      "backlogs": 0,
+      "phone": "9876500003",
+      "skills": [
+        "Embedded C",
+        "Python",
+        "MATLAB",
+        "IoT"
+      ],
+      "education": "B.Tech Electronics & Communication, GCE College (2022–2026)",
+      "experience": "Research assistant on a campus IoT sensor network project.",
+      "resumeSummary": "Hardware-software hybrid engineer with a strong analytical foundation."
+    },
+    {
+      "studentId": "u_mty7cy1ysqs4ma",
+      "rollNo": "URK25CS7029",
+      "branch": "Computer Science",
+      "batch": "2025",
+      "cgpa": 0,
+      "backlogs": 0,
+      "phone": "",
+      "skills": [],
+      "education": "",
+      "experience": "",
+      "resumeSummary": ""
+    },
+    {
+      "studentId": "u_mtzes6pdmtfboa",
+      "rollNo": "URK25CS7029",
+      "branch": "Computer Science",
+      "batch": "2025",
+      "cgpa": 0,
+      "backlogs": 0,
+      "phone": "",
+      "skills": [],
+      "education": "",
+      "experience": "",
+      "resumeSummary": ""
+    },
+    {
+      "studentId": "u_mtzewmg1ji1xk3",
+      "rollNo": "URK25CS7029",
+      "branch": "Computer Science",
+      "batch": "2025",
+      "cgpa": 0,
+      "backlogs": 0,
+      "phone": "",
+      "skills": [],
+      "education": "",
+      "experience": "",
+      "resumeSummary": ""
+    }
+  ],
+  "companies": [
+    {
+      "id": "c_stratos",
+      "name": "Stratosphere Labs",
+      "sector": "Cloud Infrastructure",
+      "website": "stratospherelabs.io"
+    },
+    {
+      "id": "c_finwise",
+      "name": "FinWise Technologies",
+      "sector": "Fintech",
+      "website": "finwise.com"
+    },
+    {
+      "id": "c_nimbus",
+      "name": "Nimbus Analytics",
+      "sector": "Data & AI",
+      "website": "nimbusanalytics.ai"
+    },
+    {
+      "id": "c_orbital",
+      "name": "Orbital Motors",
+      "sector": "Automotive Engineering",
+      "website": "orbitalmotors.com"
+    },
+    {
+      "id": "c_verdant",
+      "name": "Verdant Systems",
+      "sector": "Renewable Energy",
+      "website": "verdantsystems.com"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "j_stratos_sde",
+      "companyId": "c_stratos",
+      "recruiterId": "u_rec1",
+      "title": "Software Development Engineer",
+      "description": "Design and build features across our cloud platform.",
+      "location": "Bengaluru (Hybrid)",
+      "jobType": "Full-time",
+      "ctc": 12.5,
+      "eligibility": {
+        "minCgpa": 7.5,
+        "branches": [
+          "Computer Science",
+          "Information Technology"
+        ],
+        "maxBacklogs": 0,
+        "batch": "2026"
+      },
+      "deadline": "2026-09-21T09:32:45.171Z",
+      "status": "open",
+      "postedAt": "2026-09-12T09:32:45.172Z",
+      "rounds": [
+        "Online Assessment",
+        "Technical Interview",
+        "HR Interview"
+      ]
+    },
+    {
+      "id": "j_stratos_intern",
+      "companyId": "c_stratos",
+      "recruiterId": "u_rec1",
+      "title": "SDE Intern (6 months)",
+      "description": "Hands-on internship building internal developer tools.",
+      "location": "Remote",
+      "jobType": "Internship",
+      "ctc": 0.6,
+      "eligibility": {
+        "minCgpa": 7,
+        "branches": [
+          "Computer Science",
+          "Information Technology",
+          "Electronics & Comm."
+        ],
+        "maxBacklogs": 1,
+        "batch": "2026"
+      },
+      "deadline": "2026-09-17T09:32:45.172Z",
+      "status": "open",
+      "postedAt": "2026-09-12T09:32:45.172Z",
+      "rounds": [
+        "Coding Round",
+        "Interview"
+      ]
+    },
+    {
+      "id": "j_finwise_analyst",
+      "companyId": "c_finwise",
+      "recruiterId": "u_rec2",
+      "title": "Business Technology Analyst",
+      "description": "Build payment and risk systems used by millions.",
+      "location": "Chennai (On-site)",
+      "jobType": "Full-time",
+      "ctc": 9.8,
+      "eligibility": {
+        "minCgpa": 7,
+        "branches": [
+          "Computer Science",
+          "Information Technology",
+          "Electronics & Comm.",
+          "Mechanical",
+          "Electrical"
+        ],
+        "maxBacklogs": 0,
+        "batch": "2026"
+      },
+      "deadline": "2026-09-26T09:32:45.172Z",
+      "status": "open",
+      "postedAt": "2026-09-12T09:32:45.172Z",
+      "rounds": [
+        "Aptitude Test",
+        "Group Discussion",
+        "Technical Interview",
+        "HR Interview"
+      ]
+    },
+    {
+      "id": "j_nimbus_ds",
+      "companyId": "c_nimbus",
+      "recruiterId": "u_rec1",
+      "title": "Data Analyst",
+      "description": "Work with large datasets and dashboards.",
+      "location": "Hyderabad (Hybrid)",
+      "jobType": "Full-time",
+      "ctc": 8.4,
+      "eligibility": {
+        "minCgpa": 8,
+        "branches": [
+          "Computer Science",
+          "Information Technology",
+          "Electronics & Comm."
+        ],
+        "maxBacklogs": 0,
+        "batch": "2026"
+      },
+      "deadline": "2026-10-02T09:32:45.172Z",
+      "status": "open",
+      "postedAt": "2026-09-12T09:32:45.172Z",
+      "rounds": [
+        "Technical Interview",
+        "Case Study",
+        "HR Interview"
+      ]
+    },
+    {
+      "id": "j_orbital_core",
+      "companyId": "c_orbital",
+      "recruiterId": "u_rec2",
+      "title": "Graduate Engineer Trainee",
+      "description": "Design and test next-gen electric vehicles.",
+      "location": "Pune (On-site)",
+      "jobType": "Full-time",
+      "ctc": 7.2,
+      "eligibility": {
+        "minCgpa": 6.5,
+        "branches": [
+          "Mechanical",
+          "Electrical",
+          "Electronics & Comm."
+        ],
+        "maxBacklogs": 1,
+        "batch": "2026"
+      },
+      "deadline": "2026-09-23T09:32:45.172Z",
+      "status": "open",
+      "postedAt": "2026-09-12T09:32:45.172Z",
+      "rounds": [
+        "Technical Interview",
+        "HR Interview"
+      ]
+    },
+    {
+      "id": "j_verdant_civ",
+      "companyId": "c_verdant",
+      "recruiterId": "u_rec2",
+      "title": "Site Engineering Associate",
+      "description": "Support planning and execution of solar infrastructure projects.",
+      "location": "Coimbatore (On-site)",
+      "jobType": "Full-time",
+      "ctc": 6.5,
+      "eligibility": {
+        "minCgpa": 6,
+        "branches": [
+          "Civil",
+          "Electrical",
+          "Mechanical"
+        ],
+        "maxBacklogs": 2,
+        "batch": "2026"
+      },
+      "deadline": "2026-09-10T09:32:45.172Z",
+      "status": "closed",
+      "postedAt": "2026-09-12T09:32:45.172Z",
+      "rounds": [
+        "Interview"
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "id": "a1",
+      "jobId": "j_stratos_sde",
+      "studentId": "u_stu1",
+      "status": "shortlisted",
+      "appliedAt": "2026-09-12T09:32:45.172Z",
+      "timeline": [
+        {
+          "status": "applied",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Application submitted."
+        },
+        {
+          "status": "shortlisted",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Shortlisted after resume screening."
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "jobId": "j_stratos_intern",
+      "studentId": "u_stu1",
+      "status": "applied",
+      "appliedAt": "2026-09-12T09:32:45.172Z",
+      "timeline": [
+        {
+          "status": "applied",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Application submitted."
+        }
+      ]
+    },
+    {
+      "id": "a3",
+      "jobId": "j_finwise_analyst",
+      "studentId": "u_stu2",
+      "status": "applied",
+      "appliedAt": "2026-09-12T09:32:45.172Z",
+      "timeline": [
+        {
+          "status": "applied",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Application submitted."
+        }
+      ]
+    },
+    {
+      "id": "a4",
+      "jobId": "j_nimbus_ds",
+      "studentId": "u_stu3",
+      "status": "interview",
+      "appliedAt": "2026-09-12T09:32:45.172Z",
+      "timeline": [
+        {
+          "status": "applied",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Application submitted."
+        },
+        {
+          "status": "shortlisted",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Shortlisted."
+        },
+        {
+          "status": "interview",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Interview scheduled."
+        }
+      ]
+    },
+    {
+      "id": "a5",
+      "jobId": "j_orbital_core",
+      "studentId": "u_stu3",
+      "status": "selected",
+      "appliedAt": "2026-09-12T09:32:45.172Z",
+      "timeline": [
+        {
+          "status": "applied",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Application submitted."
+        },
+        {
+          "status": "shortlisted",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Shortlisted."
+        },
+        {
+          "status": "interview",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Interview completed."
+        },
+        {
+          "status": "selected",
+          "date": "2026-09-12T09:32:45.172Z",
+          "note": "Offer extended."
+        }
+      ]
+    }
+  ],
+  "interviews": [
+    {
+      "id": "i1",
+      "applicationId": "a4",
+      "jobId": "j_nimbus_ds",
+      "studentId": "u_stu3",
+      "round": "Technical Interview",
+      "date": "2026-09-15T09:32:45.172Z",
+      "time": "11:00 AM",
+      "mode": "Online",
+      "venue": "Google Meet link shared via email",
+      "status": "Scheduled",
+      "feedback": "",
+      "result": "",
+      "roomId": "room_i1",
+      "notes": "",
+      "notesFileName": "",
+      "recordingUrl": ""
+    },
+    {
+      "id": "i2",
+      "applicationId": "a5",
+      "jobId": "j_orbital_core",
+      "studentId": "u_stu3",
+      "round": "HR Interview",
+      "date": "2026-09-10T09:32:45.172Z",
+      "time": "3:00 PM",
+      "mode": "In-person",
+      "venue": "Placement Cell, Block A",
+      "status": "Completed",
+      "feedback": "Strong communicator, solid technical fundamentals.",
+      "result": "Selected",
+      "roomId": "room_i2",
+      "notes": "",
+      "notesFileName": "",
+      "recordingUrl": ""
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n1",
+      "userId": "u_stu3",
+      "title": "Interview Scheduled",
+      "message": "Your technical interview for Data Analyst at Nimbus Analytics is confirmed.",
+      "read": false,
+      "createdAt": "2026-09-12T09:32:45.172Z",
+      "type": "interview"
+    },
+    {
+      "id": "n2",
+      "userId": "u_stu3",
+      "title": "Offer Received",
+      "message": "Congratulations! You have been selected for Graduate Engineer Trainee at Orbital Motors.",
+      "read": false,
+      "createdAt": "2026-09-12T09:32:45.172Z",
+      "type": "result"
+    },
+    {
+      "id": "n3",
+      "userId": "u_stu1",
+      "title": "Application Shortlisted",
+      "message": "You have been shortlisted for Software Development Engineer at Stratosphere Labs.",
+      "read": false,
+      "createdAt": "2026-09-12T09:32:45.172Z",
+      "type": "status"
+    }
+  ],
+  "roomMessages": [],
+  "uploadedFiles": [],
+  "assessments": [],
+  "assessmentSubmissions": [],
+  "certificates": []
+}
