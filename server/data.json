@@ -72,6 +72,15 @@
       "role": "student",
       "companyId": "c_stratos",
       "designation": null
+    },
+    {
+      "id": "u_mu9ksc1jzedgts",
+      "name": "Garswel Roshan",
+      "email": "gr@gmail.com",
+      "password": "$2a$10$zpgj2gdrxoimld.iEg8JvO1AaQS1fixVzSFzDClJE2c4ySGlyouhG",
+      "role": "student",
+      "companyId": "c_stratos",
+      "designation": null
     }
   ],
   "students": [
@@ -156,6 +165,19 @@
     },
     {
       "studentId": "u_mtzewmg1ji1xk3",
+      "rollNo": "URK25CS7029",
+      "branch": "Computer Science",
+      "batch": "2025",
+      "cgpa": 0,
+      "backlogs": 0,
+      "phone": "",
+      "skills": [],
+      "education": "",
+      "experience": "",
+      "resumeSummary": ""
+    },
+    {
+      "studentId": "u_mu9ksc1jzedgts",
       "rollNo": "URK25CS7029",
       "branch": "Computer Science",
       "batch": "2025",
@@ -510,6 +532,60 @@
   ],
   "notifications": [
     {
+      "id": "n_mu9k7p1eoecq96",
+      "userId": "u_mtzewmg1ji1xk3",
+      "title": "Job Closing Soon",
+      "message": "Software Development Engineer closes soon. Job closing soon:j_stratos_sde",
+      "read": false,
+      "createdAt": "2026-09-20T08:33:47.138Z",
+      "type": "job"
+    },
+    {
+      "id": "n_mu9k7p1eejnm53",
+      "userId": "u_mtzes6pdmtfboa",
+      "title": "Job Closing Soon",
+      "message": "Software Development Engineer closes soon. Job closing soon:j_stratos_sde",
+      "read": false,
+      "createdAt": "2026-09-20T08:33:47.138Z",
+      "type": "job"
+    },
+    {
+      "id": "n_mu9k7p1dhu4z74",
+      "userId": "u_mty7cy1ysqs4ma",
+      "title": "Job Closing Soon",
+      "message": "Software Development Engineer closes soon. Job closing soon:j_stratos_sde",
+      "read": false,
+      "createdAt": "2026-09-20T08:33:47.137Z",
+      "type": "job"
+    },
+    {
+      "id": "n_mu9k7p1dehihnt",
+      "userId": "u_stu3",
+      "title": "Job Closing Soon",
+      "message": "Software Development Engineer closes soon. Job closing soon:j_stratos_sde",
+      "read": false,
+      "createdAt": "2026-09-20T08:33:47.137Z",
+      "type": "job"
+    },
+    {
+      "id": "n_mu9k7p1csxb5v2",
+      "userId": "u_stu2",
+      "title": "Job Closing Soon",
+      "message": "Software Development Engineer closes soon. Job closing soon:j_stratos_sde",
+      "read": false,
+      "createdAt": "2026-09-20T08:33:47.136Z",
+      "type": "job"
+    },
+    {
+      "id": "n_mu9k7p1aewuuec",
+      "userId": "u_stu1",
+      "title": "Job Closing Soon",
+      "message": "Software Development Engineer closes soon. Job closing soon:j_stratos_sde",
+      "read": false,
+      "createdAt": "2026-09-20T08:33:47.134Z",
+      "type": "job"
+    },
+    {
       "id": "n1",
       "userId": "u_stu3",
       "title": "Interview Scheduled",
@@ -541,5 +617,16 @@
   "uploadedFiles": [],
   "assessments": [],
   "assessmentSubmissions": [],
-  "certificates": []
+  "certificates": [],
+  "pushSubscriptions": [
+    {
+      "endpoint": "https://push.campushire.local/u_stu1",
+      "keys": {
+        "p256dh": "key",
+        "auth": "auth"
+      },
+      "userId": "u_stu1",
+      "createdAt": "2026-09-20T08:51:23.745Z"
+    }
+  ]
 }

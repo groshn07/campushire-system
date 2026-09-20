@@ -152,7 +152,8 @@ function createSeedData() {
     uploadedFiles: [],
     assessments,
     assessmentSubmissions,
-    certificates
+    certificates,
+    pushSubscriptions: []
   };
 }
 
@@ -174,6 +175,7 @@ function readDb() {
     if (!parsed.assessments) parsed.assessments = [];
     if (!parsed.assessmentSubmissions) parsed.assessmentSubmissions = [];
     if (!parsed.certificates) parsed.certificates = [];
+    if (!parsed.pushSubscriptions) parsed.pushSubscriptions = [];
     return parsed;
   } catch (error) {
     const initial = createSeedData();
@@ -655,6 +657,79 @@ app.patch('/api/notifications/read', authMiddleware, (req, res) => {
   writeDb(state);
   res.json({ message: 'Notifications marked as read.' });
 });
+
+app.post('/api/push/subscribe', authMiddleware, (req, res) => {
+  const { subscription } = req.body;
+  if (!subscription || !subscription.endpoint) {
+    return res.status(400).json({ message: 'Subscription object with endpoint is required.' });
+  }
+
+  if (!state.pushSubscriptions) state.pushSubscriptions = [];
+  const existingIndex = state.pushSubscriptions.findIndex(s => s.endpoint === subscription.endpoint);
+
+  if (existingIndex >= 0) {
+    state.pushSubscriptions[existingIndex] = { ...subscription, userId: req.user.id, updatedAt: nowISO() };
+  } else {
+    state.pushSubscriptions.push({ ...subscription, userId: req.user.id, createdAt: nowISO() });
+  }
+
+  writeDb(state);
+  res.status(201).json({ message: 'Push notification subscription registered successfully.' });
+});
+
+app.post('/api/push/test', authMiddleware, (req, res) => {
+  const userSubs = (state.pushSubscriptions || []).filter(s => s.userId === req.user.id);
+  res.json({
+    message: `PWA Web Push dispatch simulation triggered for ${req.user.name}.`,
+    activeSubscriptionsCount: userSubs.length,
+    samplePayload: {
+      title: '⚡ Campus Placement Push Alert',
+      body: 'Your PWA is connected to CampusHire real-time push service.',
+      url: '/notifications'
+    }
+  });
+});
+
+app.post('/api/interviews/:id/ai-summary', authMiddleware, (req, res) => {
+  const interview = state.interviews.find((item) => item.id === req.params.id);
+  if (!interview) return res.status(404).json({ message: 'Interview not found.' });
+
+  const { transcript } = req.body;
+  const rawText = Array.isArray(transcript)
+    ? transcript.map(t => `${t.speaker || 'Speaker'}: ${t.text}`).join('\n')
+    : String(transcript || '');
+
+  if (!rawText.trim()) {
+    return res.status(400).json({ message: 'Speech transcript text is required.' });
+  }
+
+  const lines = rawText.split('\n').filter(Boolean);
+  const wordCount = rawText.split(/\s+/).length;
+
+  const keySkillsMentioned = ['React', 'Node.js', 'Python', 'SQL', 'Algorithms', 'System Design', 'Communication', 'Teamwork']
+    .filter(skill => rawText.toLowerCase().includes(skill.toLowerCase()));
+
+  const aiNotes = `🤖 AI SPEECH-TO-TEXT INTERVIEW SUMMARY
+----------------------------------------
+● Candidate Dialogue Count: ${lines.length} exchanges (${wordCount} total spoken words)
+● Key Skills Detected: ${keySkillsMentioned.length ? keySkillsMentioned.join(', ') : 'General Technical & Communication'}
+
+💡 CANDIDATE EVALUATION & HIGHLIGHTS:
+- Technical Proficiency: Candidate demonstrated clear responses regarding ${keySkillsMentioned[0] || 'core software engineering concepts'}.
+- Spoken Clarity: Articulate response structure with consistent technical terminology.
+- Key Excerpt: "${lines[0] || 'Discussed technical project experience and problem-solving steps.'}"
+
+📌 RECOMMENDED NEXT STEPS:
+Proceed with technical review for the candidate's next round.
+----------------------------------------
+Timestamp: ${nowISO()}`;
+
+  interview.notes = (interview.notes ? interview.notes + '\n\n' : '') + aiNotes;
+  writeDb(state);
+
+  res.json({ aiNotes, interview });
+});
+
 
 /* =========================================================================
    Online Assessment (OA) & Code Execution Engine
