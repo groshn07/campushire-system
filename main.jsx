@@ -2598,8 +2598,6 @@ function StudentInterviews({ db, myInterviews, updateDB }) {
 
 function StudentProfile({ student, currentUser, onSave, showToast }) {
   const [showPortfolioModal, setShowPortfolioModal] = useState(false);
-
-  const [form, setForm] = useState({
     ...student,
     profilePhoto: student?.profilePhoto || "",
     linkedinUrl: student?.linkedinUrl || "",
